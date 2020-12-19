@@ -2,6 +2,24 @@
 <html>
   <head>
     <title>Geocerca</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, inicital-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+   
+    <!-- Estilos Bootstrap 4 -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    
+    
+    <!-- Iconos fonts awesome 5 -->
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <script src="js/all.js"></script>
+
+    <!-- Estilos personalizados del web -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDZktO_JnnvrY4BnD2IyZo8PqNXiDTWP1w&callback=initMap&libraries=&v=weekly"
@@ -14,24 +32,51 @@
     </script>
 </head>
   <body>
-    <label for="lat">Latitud</label>
-    <input id="coord1" name="coord1" type="number" />
-    <label for="lng">Longitud</label>
-    <input id="coord2" name="coord2" type="number" />
+    <div class="card card-default" style="width: 48rem;margin:auto;">
+
+      <div class="card-body">
+        <div>
+          <h5 class="card-title" style="text-align: center;">Google apis</h5>
+          <form>
+          
+            <div class="form-group">
+              <label for="lat">Latitud</label>
+              <input class="form-control" id="coord1" name="coord1" type="number" />
+              <label for="lng">Longitud</label>
+              <input class="form-control" id="coord2" name="coord2" type="number" />
+            </div>
+            <div style="height: 1rem;width: 100%;"> 
+        
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <button 
+                id="btnEliminarCoordenadas" 
+                name="btnEliminarCoordenadas"  
+                class="btn btn-success"
+                type="button">
+                Borrar marcas
+              </button>
+              <button 
+                id="btnObtenerCoordenadas" 
+                name="btnObtenerCoordenadas"
+                class="btn btn-danger" 
+                type="button">
+                ObtenerCoordenadas
+              </button>
+            </div>
+          </form>
+        </div>
+      
+      
+      </div>
+    </div>
     <div style="height: 1rem;width: 100%;"> 
+        
+    </div>
+    <div id="map" style="margin:auto;">
 
     </div>
-    <button id="btnEliminarCoordenadas" name="btnEliminarCoordenadas"  type="button">
-      Borrar marcas
-    </button>
-    <button id="btnObtenerCoordenadas" name="btnObtenerCoordenadas" type="button">
-      ObtenerCoordenadas
-    </button>
-    <div style="height: 1rem;width: 100%;"> 
 
-    </div>
-    <div id="map">
-
-    </div>
+    
   </body>
 </html>

@@ -1,0 +1,38 @@
+
+/* .bienvenidos{
+    background:url("../images/fondo-bienvenidos.jpg");
+    background-size: cover;
+
+} */
+.bienvenidos{
+    background-image: url("../images/fondo-bienvenidos.jpg");
+    background-size: cover;
+    height: 100vh;
+}
+
+.encabezado{
+    background: rgba(0,0,0,28);
+
+}
+
+.navbar-light .navbar-brand{
+    color: rgb(253,253,253);
+    font-size:1.3rem;
+    text-transform: uppercase;
+}
+
+.navbar-light .navbar-brand:focus{
+    color: rgb(255,255,255,0.98);
+}
+
+.navbar-toggler{
+    font-size: 1.6rem;
+    color: #fff !important;
+}
+
+#menuprincipal{
+    clear:both;
+}
+body{
+    display: flex;
+}
