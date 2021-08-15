@@ -47,8 +47,9 @@ function clearMarkers() {
       map = new google.maps.Map(document.getElementById("map"), {
         zoom: 4,
         center: { lat: 37.09, lng: -95.712 },
-        mapTypeId: "terrain",
+        mapTypeId: 'satellite',
       });
+      //mapTypeId: "terrain",
       
       //llenando marcación para mover
       var coord1 = document.getElementById('coord1');
